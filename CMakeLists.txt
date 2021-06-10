@@ -1,2 +1,6 @@
+cmake_minimum_required(VERSION 3.1.0)
 PROJECT (HELLO)
+find_package(OpenCV REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
 ADD_EXECUTABLE (hello hello.cpp)
+target_link_libraries(hello ${OpenCV_LIBRARIES})
