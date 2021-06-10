@@ -1,5 +1,7 @@
 #include <iostream>
+#include <opencv2/opencv.hpp>
 int main() {
-    std::cout << "hello, world\n";
+    std::cout << "opencv lib test\n";
+    cv::waitkey(0);
     return 0;
 }
