@@ -26,7 +26,7 @@ jobs:
       # && cd /usr/src/gtest && sudo cmake CMakeLists.txt && sudo make
 
     - name: Install OpenCV
-      run: sudo apt-get install libopencv-dev
+      run: sudo apt-get update && export DEBIAN_FRONTEND=noninteractive && sudo apt-get install -y libopencv-dev
     #  uses: Dovyski/setup-opencv-action@v1
     #  with:
     #    opencv-version: '4.0.0'
