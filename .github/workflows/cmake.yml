@@ -21,11 +21,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
-    - name: Install gtest manually
-      run: sudo apt-get install libgtest-dev
+    #- name: Install gtest manually
+    #  run: sudo apt-get install libgtest-dev
       # && cd /usr/src/gtest && sudo cmake CMakeLists.txt && sudo make
 
-    #- name: Install OpenCV
+    - name: Install OpenCV
+      run: sudo apt-get install libopencv-dev
     #  uses: Dovyski/setup-opencv-action@v1
     #  with:
     #    opencv-version: '4.0.0'
